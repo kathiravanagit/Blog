@@ -15,3 +15,8 @@ python manage.py collectstatic --no-input
 
 # Run migrations
 python manage.py migrate
+
+# Create superuser if environment variables are set
+if [ -n "$DJANGO_SUPERUSER_USERNAME" ]; then
+    python ../myapp/create_superuser.py
+fi
