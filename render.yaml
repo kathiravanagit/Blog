@@ -4,8 +4,5 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt && cd myapp && python manage.py collectstatic --no-input && python manage.py migrate
-    startCommand: cd myapp && gunicorn myapp.wsgi:application
+    startCommand: gunicorn -w 3 -b 0.0.0.0:8080 myapp.wsgi:application --chdir myapp
     autoDeploy: true
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.13.8
