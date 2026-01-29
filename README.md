@@ -160,23 +160,3 @@ Never commit sensitive credentials to public repositories!
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## License
-
-This project is open source and available for educational purposes.
-
-## Author
-
-**Kathiravan**
-- GitHub: [@kathiravanagit](https://github.com/kathiravanagit)
-
-## Acknowledgments
-
-- Django Documentation
-- Firebase Admin SDK
-- Bootstrap (if used in templates)
-
----
-
-For any issues or questions, please open an issue on the GitHub repository.
-
