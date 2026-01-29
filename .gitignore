@@ -51,3 +51,7 @@ firebase-credentials.json
 # OS
 .DS_Store
 Thumbs.db
+
+serviceAccountKey.json
+*.json
+.env
