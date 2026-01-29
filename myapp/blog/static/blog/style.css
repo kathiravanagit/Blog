@@ -1,0 +1,11 @@
+/* Unified post image styling */
+.post-image {
+    width: 100%;
+    height: 160px; /* compact, consistent across list and detail */
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+body {
+    background-color: #cccccc;
+}
