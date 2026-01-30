@@ -1,14 +1,25 @@
- <header class="p-3 bg-dark text-white">
-        <div class="row align-items-center">
-            <div class="col">
-                <h3>TechInsights</h3>
-            </div>
-            <div class="col">
-                <div class="d-flex justify-content-end gap-4">
-                    <a class="text-light text-decoration-none" href="{% url 'blog:index' %}">Home</a>
-                    <a class="text-light text-decoration-none" href="{% url 'blog:about' %}">About</a>
-                    <a class="text-light text-decoration-none" href="{% url 'blog:contact' %}">Contact</a>
-                </div>
+<header class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'blog:index' %}">
+                <h3 class="mb-0">TechInsights</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:contact' %}">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
+</header>

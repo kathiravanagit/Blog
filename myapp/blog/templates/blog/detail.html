@@ -3,17 +3,17 @@
 {% block title %}{{ post.title|default:"Post" }} - Blog{% endblock %}
 
 {%block content %}
-<div class="container-fluid ">
+<div class="container-fluid px-3 px-md-4">
         
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
               {% if post %}
-              <div class="mb-4">
-                <span class="badge bg-primary mb-3">{{ post.category }}</span>
-                <h1 class="mb-2">{{ post.title }}</h1>
+              <div class="mb-3 mb-md-4">
+                <span class="badge bg-primary mb-2 mb-md-3">{{ post.category }}</span>
+                <h1 class="mb-2 fs-2 fs-md-1">{{ post.title }}</h1>
                 
                 <!-- Post metadata -->
-                <div class="post-meta text-muted mb-4 d-flex gap-4 flex-wrap">
+                <div class="post-meta text-muted mb-3 mb-md-4 d-flex gap-2 gap-md-4 flex-wrap small">
                   <span><i class="bi bi-person"></i> By <strong>{{ post.author }}</strong></span>
                   {% if post.created_at %}
                     <span><i class="bi bi-calendar3"></i> {{ post.created_at|date:"M d, Y" }}</span>
@@ -24,25 +24,25 @@
               </div>
 
               <!-- Featured image -->
-              <img src="{{ post.image_url|default:'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=400&fit=crop' }}" class="post-image mb-4 shadow-sm" alt="{{ post.title }}" style="max-height: 400px; max-width: 800px; width: 100%; object-fit: cover;">
+              <img src="{{ post.image_url|default:'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=400&fit=crop' }}" class="post-image mb-3 mb-md-4 shadow-sm w-100" alt="{{ post.title }}" style="max-height: 400px; object-fit: cover; border-radius: 0.5rem;">
               
               <!-- Post content -->
-              <div class="post-content" style="background-color: white; padding: 2rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                <p style="font-size: 1.1rem; line-height: 1.8; color: #333;">{{ post.content|linebreaks }}</p>
+              <div class="post-content" style="background-color: white; padding: 1rem; padding-md: 2rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                <p style="font-size: 1rem; line-height: 1.7; color: #333;">{{ post.content|linebreaks }}</p>
               </div>
 
               <!-- Tags/Category section -->
-              <div class="mt-5 pt-4 border-top">
-                <p class="text-muted">
+              <div class="mt-4 mt-md-5 pt-3 pt-md-4 border-top">
+                <p class="text-muted small">
                   <strong>Filed Under:</strong> 
                   <span class="badge bg-secondary">{{ post.category }}</span>
                 </p>
               </div>
 
               <!-- Author bio section -->
-              <div class="mt-4 p-3" style="background-color: #f8f9fa; border-left: 4px solid #0d6efd; border-radius: 0.25rem;">
-                <p class="mb-0"><strong>About the author</strong></p>
-                <p class="text-muted mb-0">{{ post.author }} is a contributor to this blog.</p>
+              <div class="mt-3 mt-md-4 p-3" style="background-color: #f8f9fa; border-left: 4px solid #0d6efd; border-radius: 0.25rem;">
+                <p class="mb-2 small"><strong>About the author</strong></p>
+                <p class="text-muted mb-0 small">{{ post.author }} is a contributor to this blog.</p>
               </div>
 
               {% else %}

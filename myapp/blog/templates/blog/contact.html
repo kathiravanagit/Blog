@@ -3,9 +3,9 @@
 {% block title %}Contact - Blog{% endblock %}
 
 {% block content %}
-    <div class="container-fluid">
-        <div class="d-flex justify-content-center mt-5 mb-5">
-            <div class="d-flex gap-3 flex-column" style="width: 100%; max-width: 500px;">
+    <div class="container-fluid px-3 px-md-4">
+        <div class="d-flex justify-content-center mt-4 mt-md-5 mb-4 mb-md-5">
+            <div class="d-flex gap-3 flex-column" style="width: 100%; max-width: 600px;">
                 <h3>Contact Form</h3>
                 
                 {% if messages %}
@@ -19,7 +19,7 @@
                 
                 <form method="post" class="row g-3">
                     {% csrf_token %}
-                    <div class="col-md-6">
+                    <div class="col-12 col-md-6">
                         <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
                         <input type="text" class="form-control {% if form.name.errors %}is-invalid{% endif %}" id="name" name="name" required>
                         {% if form.name.errors %}
@@ -28,7 +28,7 @@
                             </div>
                         {% endif %}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12 col-md-6">
                         <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
                         <input type="email" class="form-control {% if form.email.errors %}is-invalid{% endif %}" id="email" name="email" required>
                         {% if form.email.errors %}
@@ -47,7 +47,7 @@
                         {% endif %}
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary w-100 w-md-auto">Submit</button>
                     </div>
                 </form>
             </div>

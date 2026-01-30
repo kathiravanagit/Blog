@@ -4,22 +4,25 @@
 
 {% block content %}
 
-    <div class="container-fluid ">
-        <h3>About Us</h3>
-        <div class="d-flex gap-3 justify-content-center mt-5">
-            <img src="https://picsum.photos/300/300" alt="">
-            <div class="content">
-                {{ about_us.content }}
-    
-                Our company was founded on the principles of honesty, reliability, and transparency. We believe in building strong relationships with our customers and partners based on trust and mutual respect. By listening to our customers' needs and adapting to changing market trends, we continue to evolve and improve our offerings.
-                
-                At our core, we are driven by a commitment to excellence and continuous improvement. We invest in research and development to stay ahead of the curve and bring cutting-edge solutions to our customers. Our dedication to quality ensures that every product we deliver meets the highest standards of performance and reliability.
-                
-                We are proud of our track record of success and the positive impact we have made in the industry. But we are not content to rest on our laurels. We are always looking for new opportunities to grow and expand our reach, while staying true to our values and vision.
-                
-                Thank you for choosing us as your trusted partner. We look forward to serving you and exceeding your expectations for many years to come.
+    <div class="container-fluid px-3 px-md-4">
+        <h3 class="my-3">About Us</h3>
+        <div class="row g-3 g-md-4 justify-content-center mt-3 mt-md-5">
+            <div class="col-12 col-md-4 col-lg-3 text-center">
+                <img src="https://picsum.photos/300/300" alt="Company Image" class="img-fluid rounded" style="max-width: 300px;">
             </div>
-            
+            <div class="col-12 col-md-8 col-lg-7">
+                <div class="content" style="line-height: 1.7;">
+                    {{ about_us.content }}
+        
+                    Our company was founded on the principles of honesty, reliability, and transparency. We believe in building strong relationships with our customers and partners based on trust and mutual respect. By listening to our customers' needs and adapting to changing market trends, we continue to evolve and improve our offerings.
+                    
+                    At our core, we are driven by a commitment to excellence and continuous improvement. We invest in research and development to stay ahead of the curve and bring cutting-edge solutions to our customers. Our dedication to quality ensures that every product we deliver meets the highest standards of performance and reliability.
+                    
+                    We are proud of our track record of success and the positive impact we have made in the industry. But we are not content to rest on our laurels. We are always looking for new opportunities to grow and expand our reach, while staying true to our values and vision.
+                    
+                    Thank you for choosing us as your trusted partner. We look forward to serving you and exceeding your expectations for many years to come.
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

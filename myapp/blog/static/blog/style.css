@@ -9,3 +9,126 @@
 body {
     background-color: #cccccc;
 }
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 576px) {
+    .post-image {
+        height: 200px;
+    }
+    
+    h1 {
+        font-size: 1.75rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .card-body {
+        padding: 0.75rem;
+    }
+    
+    .navbar-brand h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 577px) and (max-width: 768px) {
+    .post-image {
+        height: 180px;
+    }
+}
+
+/* Desktop adjustments */
+@media (min-width: 769px) {
+    .post-image {
+        height: 220px;
+    }
+}
+
+/* Large desktop adjustments */
+@media (min-width: 1200px) {
+    .post-image {
+        height: 240px;
+    }
+}
+
+/* Ensure cards have equal height in grid */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+}
+
+/* Responsive typography for post content */
+.post-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+    .post-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+}
+
+/* Responsive spacing */
+.container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* Footer responsive */
+footer {
+    margin-top: auto;
+}
+
+footer .col-4 {
+    width: 100%;
+    text-align: center;
+}
+
+/* Ensure images don't overflow on small screens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive navigation */
+.navbar-nav {
+    text-align: center;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+    }
+}
