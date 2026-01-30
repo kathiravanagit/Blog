@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build script for deployment
+# Build script for deployment - Updated Jan 30, 2026
 
 # Exit on error
 set -o errexit
